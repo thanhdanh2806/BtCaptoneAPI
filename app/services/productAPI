@@ -1,0 +1,26 @@
+function apiGetProducts(searchTerm) {
+ return axios({
+        url: "https://62f50939535c0c50e76847f6.mockapi.io/mobiles",
+        method: "GET",
+        params: {
+            name: searchTerm
+        }
+    });
+}
+
+function apiGetType(type) {
+    return axios({
+           url: "https://62f50939535c0c50e76847f6.mockapi.io/mobiles",
+           method: "GET",
+           params: {
+            type: type
+        }
+       });
+   }
+
+   function apiGetProductID(id) {
+    return axios({
+        url : `https://62f50939535c0c50e76847f6.mockapi.io/mobiles/${id}`,
+        method : 'GET',
+    })
+}
